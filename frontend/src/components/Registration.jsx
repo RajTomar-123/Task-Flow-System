@@ -22,7 +22,8 @@ function Registration() {
             password: password
         }
 
-        axios.post('http://localhost:3000/user/register', payload)
+        // axios.post('http://localhost:3000/user/register', payload)
+        axios.post('https://task-flow-system-lmnw.vercel.app/user/register', payload)
             .then((res) => {
                 setLoading(false)
                 toast("Registration Successful");

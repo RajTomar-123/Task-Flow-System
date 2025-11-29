@@ -20,18 +20,24 @@ const AdminDashboard = () => {
 
     // Fetch task stats
     useEffect(() => {
-        axios.get("http://localhost:3000/api/task-stats")
+        // axios.get("http://localhost:3000/api/task-stats")
+        axios.get("https://task-flow-system-lmnw.vercel.app/api/task-stats")
+
             .then(res => setStats(res.data))
             .catch(err => console.error(err));
     }, []);
 
     // Fetch tasks + users
     useEffect(() => {
-        axios.get("http://localhost:3000/api/tasks")
+        // axios.get("http://localhost:3000/api/tasks")
+        axios.get("https://task-flow-system-lmnw.vercel.app/api/tasks")
+
             .then((res) => setTasks(res.data))
             .catch((err) => console.error("Error fetching tasks:", err));
 
-        axios.get("http://localhost:3000/user/all")
+        // axios.get("http://localhost:3000/user/all")
+        axios.get("https://task-flow-system-lmnw.vercel.app/user/all")
+
             .then((res) => setUserList(res.data))
             .catch((err) => console.error("Error fetching users:", err));
     }, []);
@@ -48,7 +54,8 @@ const AdminDashboard = () => {
             category,
         };
 
-        axios.post('http://localhost:3000/users/task', Task)
+        // axios.post('http://localhost:3000/users/task', Task)
+        axios.post("https://task-flow-system-lmnw.vercel.app/users/task", Task)
             .then((res) => {
                 setLoading(false);
                 toast("Task Created Successfully");

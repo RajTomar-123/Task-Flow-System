@@ -16,14 +16,17 @@ const EmployeeDashboard = () => {
     }, []);
 
     useEffect(() => {
-        axios.get("http://localhost:3000/api/tasks")
+        // axios.get("http://localhost:3000/api/tasks")
+        axios.get("https://task-flow-system-lmnw.vercel.app/api/tasks")
+
             .then(res => setTasks(res.data))
             .catch(err => console.error(err));
     }, []);
 
     const updateTaskStatus = async (task, action) => {
         try {
-            const res = await axios.put("http://localhost:3000/api/task/update-status", {
+            // const res = await axios.put("http://localhost:3000/api/task/update-status", {
+            const res = await axios.put("https://task-flow-system-lmnw.vercel.app/api/task/update-status", {
                 asignTo: task.asignTo,
                 taskTitle: task.taskTitle,
                 taskDate: task.taskDate,
