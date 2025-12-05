@@ -1,74 +1,80 @@
-**🚀 Task Flow System – MERN Stack**
+# 🚀 Task Flow System – MERN Stack
 
-_For demo_
-(Admin email- Raj@me.com and Password- 12345)
-(Employee email- Rahul@me.com and Password- 123)
+A **role-based task management system** built using the **MERN Stack** where **Admins assign tasks** and **Employees manage task progress** with real-time UI updates and secure authentication.
 
-A role-based task management system for Admins and Employees. Admins can assign tasks, and employees can accept, complete, or fail tasks. Real-time UI updates and MongoDB integration.
+---
 
-📌 Features
-✅ Authentication & Roles
+## 🔐 Demo Login Credentials
 
-Secure JWT-based login & registration
+### 👨‍💼 Admin
+- **Email:** Raj@me.com  
+- **Password:** 12345  
 
-Two roles:
+### 👨‍🔧 Employee
+- **Email:** Rahul@me.com  
+- **Password:** 123  
 
-Admin → Access Admin Dashboard 
+---
 
-Employee → Access Employee Dashboard
+## 📌 Features
 
-🧑‍💼 Admin Dashboard
+### ✅ Authentication & Role Management
+- Secure **JWT-based login & registration**
+- Two user roles:
+  - **Admin** → Access to Admin Dashboard
+  - **Employee** → Access to Employee Dashboard
 
-Add/create new tasks
+---
 
-Assign tasks to specific employees
+## 🧑‍💼 Admin Dashboard
+- Create and add new tasks
+- Assign tasks to specific employees
+- View all tasks with **real-time status updates**
+- Update and manage task details
 
-View all tasks with real-time status
+---
 
-Manage or update task details
+## 👨‍🔧 Employee Dashboard
+- View assigned tasks
+- **Accept / Complete / Fail tasks**
+- Task card color changes based on status
+- Task statistics displayed:
+  - 🆕 New
+  - ▶ Active
+  - ✅ Completed
+  - ❌ Failed
 
-👨‍🔧 Employee Dashboard
+---
 
-View assigned tasks
+## 📊 Task Management System
+Each task includes:
+- Title  
+- Description  
+- Category  
+- Assigned User  
+- Date  
+- Status *(New, Active, Completed, Failed)*
 
-Accept/Complete/Fail tasks
+---
 
-Task card color changes based on status
+## 🔗 Frontend & Backend Integration
+- **Frontend:** React + Vite
+- **Backend:** Node.js + Express.js
+- **Database:** MongoDB
+- **API Calls:** Axios
+- **Authentication:** JWT
+- **Deployment:** Vercel (Frontend + Backend)
 
-Task counts shown:
+---
 
-New
+## 🛠️ Tech Stack
+- React.js
+- Vite
+- Node.js
+- Express.js
+- MongoDB
+- Axios
+- JWT Authentication
+- Tailwind CSS (if used)
+- Vercel Deployment
 
-Active
-
-Completed
-
-Failed
-
-📊 Task Management
-
-Each task contains:
-
-Title
-
-Description
-
-Category
-
-Assigned user
-
-Date
-
-Status (new, active, completed, failed)
-
-🔗 Backend + Frontend Connection
-
-Frontend: React + Vite
-
-Backend: Node + Express
-
-MongoDB for data storage
-
-Axios for API calls
-
-Deployed using Vercel (Frontend + Backend)
